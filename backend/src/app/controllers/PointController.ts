@@ -4,6 +4,8 @@ import { Request, Response} from 'express'
 class Point {
   async store(req: Request, res: Response){
 
+    const trx = await knex.transaction()
+
     const {
       name,
       email,
@@ -26,7 +28,7 @@ class Point {
       uf,
     }
 
-    const insertedIds = await knex('points').insert(point).returning('id')
+    const insertedIds = await trx('points').insert(point).returning('id')
 
     const point_id = insertedIds[0]
 
@@ -40,7 +42,9 @@ class Point {
 
 
 
-    await knex('point_items').insert(pointItems)
+    await trx('point_items').insert(pointItems)
+
+    await trx.commit()
 
 
     return res.json({
@@ -61,7 +65,31 @@ class Point {
      return res.status(404).json({error: 'Point not found - check the ID and try again'})
    }
 
-   return res.json(point)
+   const items = await knex('items').join('point_items', 'items.id', '=', 'point_items.item_id')
+   .where('point_items.point_id', id).select('items.title')
+
+   return res.json({point, items})
+  }
+
+  async index(req: Request, res: Response){
+    //Cidade, UF, items
+    const {city, uf, items} = req.query;
+
+    const parsedItems = String(items)
+    .split(',')
+    .map(item => Number(item.trim()));
+
+    const points = await knex('points')
+    .join('point_items', 'points.id', '=', 'point_items.point_id')
+    .whereIn('point_items.item_id', parsedItems)
+    .where('city', String(city))
+    .where('uf', String(uf))
+    .distinct()
+    .select('points.*')
+
+   
+
+    return res.json(points)
   }
 
   
