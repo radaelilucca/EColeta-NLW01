@@ -25,7 +25,14 @@ module.exports = {
     'react/jsx-props-no-spreading': 'off',
     'react/prop-types': 'off',
     'no-param-reassign': 'off',
-    'no-console': 'off'
+    'no-console': 'off',
+    'prettier/prettier': 'error',
+    'react/jsx-filename-extension': [
+      'warn',
+      {
+        extensions: ['.jsx', '.js', '.ts', '.tsx']
+      }
+    ],
     
     
   },
