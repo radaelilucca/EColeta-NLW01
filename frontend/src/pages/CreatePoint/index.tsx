@@ -82,7 +82,7 @@ const CreatePoint = () => {
     setCitties(cityNames)
   })
 
-  console.log(citties)
+
   }, [selectedUf])
 
   // Get user initial position
@@ -127,16 +127,9 @@ const CreatePoint = () => {
     if(alreadySelected >= 0 ){
       const filteredItems = selectedItems.filter(item => item !== id)
       setSelectedItems(filteredItems)
-
     }else {
-
       setSelectedItems([...selectedItems, id])
-    }
-    
-    
-   
-
- 
+    }     
   }
 
   async function handleSubmit(event: FormEvent) {
