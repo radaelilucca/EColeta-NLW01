@@ -21,6 +21,7 @@ interface Point {
   name: string;
   latitude: number;
   longitude: number;
+  image_url: string;
   
 }
 
@@ -94,12 +95,12 @@ const Points = () => {
       params: {
         city: 'Rio de Janeiro',
         uf: 'RJ',
-        items: [3]
+        items: selectedItems
       }
     }).then(response => {
       setPoints(response.data)
     } )
-  }, [])
+  }, [selectedItems])
     
     
 
@@ -133,7 +134,7 @@ const Points = () => {
             }}>
               <View style={styles.mapMarkerContainer}>
               <Image style={styles.mapMarkerImage} source={{
-                uri: point.image
+                uri: point.image_url
               }}/>
               <Text style={styles.mapMarkerTitle}>
                {point.name}
