@@ -1,26 +1,28 @@
 import React, {useEffect, useState} from 'react';
-import Constants from 'expo-constants'
 import { View, StyleSheet, TouchableOpacity, Text, ScrollView, Image, SafeAreaView, Alert  } from 'react-native';
 import {Feather as Icon} from '@expo/vector-icons'
-import {useNavigation} from '@react-navigation/native'
+import {useNavigation, useRoute} from '@react-navigation/native'
 import MapView, {Marker} from 'react-native-maps';
 import {SvgUri} from 'react-native-svg'
 import * as Location from 'expo-location'
 
 import api from '../../services/api'
-
 interface Item {
   title: string;
   id: number;
   image_url: string;
 }
-
+interface Params {
+  selectedCity: string,
+  selectedUf: string,
+}
 interface Point {  
   id: number;
   image: string;
   name: string;
   latitude: number;
   longitude: number;
+  image_url: string;
   
 }
 
@@ -30,6 +32,13 @@ const Points = () => {
   const [initialPosition, setInitialPosition] = useState<[number, number]>([0, 0])
   const [points, setPoints] = useState<Point[]>([])
   const navigation = useNavigation()
+  const route = useRoute()
+
+  var selectEvent = 1;
+
+  const routeParams = route.params as Params;
+
+  const {selectedCity, selectedUf } = routeParams
 
   function handleNavigateBack(){
     navigation.goBack()
@@ -41,9 +50,13 @@ const Points = () => {
   // get items from api
   useEffect(() => {
     async function getItemsFromApi(){
+
     const response = await api.get('/items');
+
     setItems(response.data)
+
     }
+
     getItemsFromApi()
   }, [])
 
@@ -71,30 +84,42 @@ const Points = () => {
     loadPosition()
   }, [])
 
-  function handleSelectItem(id: number){   
+  function handleSelectItem(id: number){    
 
     const alreadySelected = selectedItems.findIndex(item => item == id)
     
     if(alreadySelected >= 0 ){
       const filteredItems = selectedItems.filter(item => item !== id)
       setSelectedItems(filteredItems)
-    }else {
+     
+    }else {     
       setSelectedItems([...selectedItems, id])
     }     
   }
 
   // Get points
-  useEffect(() => {
-    api.get('points', {
-      params: {
-        city: 'Rio de Janeiro',
-        uf: 'RJ',
-        items: [3]
-      }
-    }).then(response => {
+
+  useEffect(() => {   
+    
+    async function getPoints(){
+     try {
+      const response = await api.get('points', {
+        params: {
+          city: selectedCity,
+          uf: selectedUf,
+          items: selectedItems.join(',')
+        }
+      })
       setPoints(response.data)
-    } )
-  }, [])
+     
+     } catch (error) {
+      
+      setPoints([])       
+     }
+    } 
+    getPoints()   
+
+  }, [selectedItems])
     
     
 
@@ -128,7 +153,7 @@ const Points = () => {
             }}>
               <View style={styles.mapMarkerContainer}>
               <Image style={styles.mapMarkerImage} source={{
-                uri: point.image
+                uri: point.image_url
               }}/>
               <Text style={styles.mapMarkerTitle}>
                {point.name}
