@@ -26,17 +26,19 @@
   </a>
 </p>
 
-<h4 align="center">
-  🌟 <a href="#-nlw">Next Level Week</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  💻 <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  🚀 <a href="#rocket-Technologies">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  🎆 <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  👨‍🏫 <a href="#gear-executando">Executar</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  ➕ <a href="#-como-contribuir">Contribuir</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  :memo: <a href="#memo-licença">License</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  📧  <a href="#-contato">Contato</a>
-  
-</h4>
+<h3 align="center">
+  🌟 &nbsp; <a href="#-NLW">Next Level Week</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  💻 &nbsp;<a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  🚀 &nbsp; <a href="#rocket-Technologies">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  🎆 &nbsp; <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</h3>
+
+<h3 align="center">
+  👨‍🏫 &nbsp; <a href="#gear-executando">Executar</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  ➕ &nbsp; <a href="#-como-contribuir">Contribuir</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  :memo: &nbsp; <a href="#memo-licença">License</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  📧 &nbsp;<a href="#-contato">Contato</a>
+</h3>
 
 <br/>
 
@@ -169,7 +171,7 @@ This project is under the MIT license. See the [LICENSE](https://github.com/rada
  <h4>Gostou do Projeto e quer conversar sobre? Me chama pra gente trocar uma idéia! </h4>  
   <p>
     <a href="https://www.linkedin.com/in/luccaradaeli/">
-      <img src="https://github.com/radaelilucca/FinDevs/blob/master/Assets/Linkedin.png?raw=true" width=15%/> 
+      <img src="https://github.com/radaelilucca/FinDevs/blob/master/Assets/Linkedin.png?raw=true" width=10%/> 
       </a>
   </p>
 <p>
