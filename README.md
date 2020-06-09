@@ -85,9 +85,9 @@ Você pode visualizar o layout no [Figma](https://www.figma.com/file/1SxgOMojOB2
 
 Para baixar e executar esta aplicação você vai precisar de: [Git](https://git-scm.com), [Docker][docker], [PostgreSQL][postgresql] e [Node.js][nodejs] + [Yarn][yarn].
 
-### 🗄️ Executando a API 
+### 🗄️ Executando a API (backend)
 
-<a href="" target="_blank"><img src="https://insomnia.rest/images/run.svg" alt="Run in Insomnia"></a>
+<a href="https://insomnia.rest/run/?label=Ecoleta-nlw-radaelilucca&uri=https%3A%2F%2Fraw.githubusercontent.com%2Fradaelilucca%2FEColeta-NLW01%2Fmaster%2Fbackend%2FInsomnia_ecoleta.json" target="_blank"><img src="https://insomnia.rest/images/run.svg" alt="Run in Insomnia"></a>
 
 ```bash
 # Clone este repositório:
@@ -119,7 +119,7 @@ $ yarn dev
 Para testes, utilize um cliente HTTP como o Insomnia ou Postman.
 ```
 
-### 🌐 Executando o Front-end Web
+### 🌐 Executando o Frontend
 
 ```bash
 # Clone este repositório:
@@ -139,7 +139,7 @@ $ yarn start
 # O frontend roda por padrão na porta 3000!
 ```
 
-### 📱 Executando o Front-end Mobile 
+### 📱 Executando o Aplicativo Mobile 
 
 ```bash
 # Clone este repositório:
