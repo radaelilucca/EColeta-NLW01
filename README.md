@@ -26,21 +26,21 @@
   </a>
 </p>
 
-<h3 align="center">
+<h4 align="center">
   🌟 <a href="#-nlw">Next Level Week</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   💻 <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   🚀 <a href="#rocket-Technologies">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   🎆 <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  👨‍🏫 <a href="#-executando">Executar</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  👨‍🏫 <a href="#gear-executando">Executar</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   ➕ <a href="#-como-contribuir">Contribuir</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  :memo:<a href="#memo-license">License</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  📧 <a href="#phone-contato">Contato</a>
+  :memo: <a href="#memo-licença">License</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  📧  <a href="#-contato">Contato</a>
   
-</h3>
+</h4>
 
 <br/>
 
-## :information_source: NLW - O que é?
+## 🌟 NLW - O que é?
 
 A Next Level Week é uma semana prática com muito código, desafios, networking e um único objetivo: levá-lo ao próximo nível.
 Através do nosso método, você aprenderá novas ferramentas, aprenderá sobre novas tecnologias e descobrirá hacks que irão impulsionar sua carreira.
@@ -74,7 +74,8 @@ Este projeto foi desenvolvido com as seguintes tecnologias:
 
 Você pode visualizar o layout no [Figma](https://www.figma.com/file/1SxgOMojOB2zYT0Mdk28lB/)!
 
-## ⚙️ Executando
+## :gear: Executando
+
 
 Para baixar e executar esta aplicação você vai precisar de: [Git](https://git-scm.com), [Docker][docker], [PostgreSQL][postgresql] e [Node.js][nodejs] + [Yarn][yarn].
 
