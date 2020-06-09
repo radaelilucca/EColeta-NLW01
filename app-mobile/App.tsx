@@ -1,4 +1,7 @@
 import React from 'react';
+if(__DEV__) {
+  import("./src/config/ReactotronConfig")
+}
 import {StatusBar} from 'react-native'
 import {AppLoading} from 'expo'
 

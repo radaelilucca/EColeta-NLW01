@@ -5,8 +5,6 @@ import {useNavigation} from '@react-navigation/native'
 import {StyleSheet, ImageBackground, Text, View, Image} from 'react-native'
 import RNPickerSelect from 'react-native-picker-select';
 import axios from 'axios'
-
-
 interface IBGEUFReponse {
   sigla: string,
   nome: string,
@@ -20,12 +18,6 @@ interface parsedIBGResponse {
   label: string,
   value: string,
 }
-
-
-
-
-
-
 
 const pickerSettings = {
   style: {
@@ -62,7 +54,6 @@ const pickerSettings = {
 
 }
 
-
 export default function Home(){
   const [parsedUfs, setParsedUfs] = useState<parsedIBGResponse[]>([])
   const [parsedCitties, setParsedCitties] = useState<parsedIBGResponse[]>([])
@@ -70,14 +61,15 @@ export default function Home(){
   const [selectedUf, setSelectedUf] = useState('0')
   const [selectedCity, setSelectedCity] = useState('0')
 
-
+  
   const navigation = useNavigation()
 
   function handleNavigateToPoints() {
-    navigation.navigate('Points')
+    navigation.navigate('Points', {
+      selectedCity,
+      selectedUf,
+    })
   }
-
-
 
   useEffect(() => {
     axios.get<IBGEUFReponse[]>('https://servicodados.ibge.gov.br/api/v1/localidades/estados?orderBy=nome').then(response => {
@@ -87,7 +79,7 @@ export default function Home(){
           value: uf.sigla
         }
       })      
-      setParsedUfs(ufs)
+      setParsedUfs(ufs)      
     })
   }, [])
 
@@ -151,7 +143,6 @@ export default function Home(){
 
   )
 }
-
 
 const styles = StyleSheet.create({
   container: {

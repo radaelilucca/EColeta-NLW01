@@ -14,6 +14,7 @@
     "@react-navigation/native": "^5.5.1",
     "@react-navigation/stack": "^5.4.2",
     "axios": "^0.19.2",
+    "dotenv": "^8.2.0",
     "expo": "~37.0.3",
     "expo-constants": "~9.0.0",
     "expo-font": "~8.1.0",
@@ -37,6 +38,7 @@
     "@types/react": "~16.9.23",
     "@types/react-native": "~0.61.17",
     "babel-preset-expo": "~8.1.0",
+    "reactotron-react-native": "^5.0.0",
     "typescript": "~3.8.3"
   },
   "private": true

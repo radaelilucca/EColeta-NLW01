@@ -33,6 +33,7 @@ interface IBGECityReponse {
 
 
 
+
 const CreatePoint = () => {
   const history = useHistory()
   // arr ou obj informar o tipo da variavel
@@ -58,7 +59,9 @@ const CreatePoint = () => {
 
   // Get available collectable items from API
   useEffect(() => {
+    console.log(process.env.REACT_APP_API_URL)
     api.get('items').then(response => {
+      console.log(response.data)
       setItems(response.data)
     })
   }, [])
@@ -137,9 +140,7 @@ const CreatePoint = () => {
   }
 
   async function handleSubmit(event: FormEvent) {
-    event.preventDefault()
-
-    console.log(selectedFile)
+    event.preventDefault()    
 
     const {name, email, whatsapp} = formData;
     const uf = selectedUf;
