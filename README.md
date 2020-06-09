@@ -6,10 +6,9 @@
 	Desenvolvido durante a Next Level Week 1.0  da <a href="https://rocketseat.com.br/"> Rocketseat</a>
 </h3>
 
-<p align="center">		
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/radaelilucca/EColeta-NLW01?style=for-the-badge">
+<p align="center">		 
 
-  <img alt="Languages" src="https://img.shields.io/github/languages/count/radaelilucca/EColeta-NLW01?style=for-the-badge">
+  <img alt="Language" src="https://img.shields.io/github/languages/top/radaelilucca/EColeta-NLW01?style=for-the-badge">
   
 	
   <a href="https://www.linkedin.com/in/luccaradaeli/">
