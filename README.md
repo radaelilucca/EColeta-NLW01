@@ -2,9 +2,9 @@
     <img alt="EColeta" title="#NextLevelWeek" src="https://raw.githubusercontent.com/radaelilucca/EColeta-NLW01/7e2ba7eafed08e9b903123e91a88d78bc8e00ab8/readme-assets/logo.svg" width="250px" />
 </h1>
 
-<h2 align="center"> 
+<h3 align="center"> 
 	Desenvolvido durante a Next Level Week 1.0  da <a href="https://rocketseat.com.br/"> Rocketseat</a>
-</h2>
+</h3>
 
 <p align="center">		
   <img alt="Repository size" src="https://img.shields.io/github/repo-size/radaelilucca/EColeta-NLW01?style=for-the-badge">
@@ -36,7 +36,7 @@
 <h3 align="center">
   👨‍🏫 &nbsp; <a href="#gear-executando">Executar</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   ➕ &nbsp; <a href="#-como-contribuir">Contribuir</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  :memo: &nbsp; <a href="#memo-licença">License</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  :memo: &nbsp; <a href="#memo-licença">Licença</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   📧 &nbsp;<a href="#-contato">Contato</a>
 </h3>
 
@@ -53,6 +53,10 @@ Um evento online e totalmente gratuito que o ajudará a dar o próximo passo na 
 ## 💻 Projeto
 
 O Ecoleta visa conectar pessoas à companhias que coletam resíduos recicláveis como pilhas, lâmpadas, óleo de cozinha, etc...
+
+Pela plataforma web o usuário consegue cadastrar novos pontos de coleta, passando informações básicas de endereço e contato, uma imagem e os itens que este ponto pode coletar.
+
+Já pelo aplicativo móvel o usuário consegue encontrar no mapa os pontos de coleta localizados na cidade informada, filtrados pelos itens que estes pontos aceitam coletar.
 
 
 <h1 align="center">
