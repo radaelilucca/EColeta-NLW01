@@ -70,8 +70,11 @@ Este projeto foi desenvolvido com as seguintes tecnologias:
 - [Node.js][nodejs]
 - [Docker][docker]
 - [PostgreSQL][postgresql]
+- [Knex.js][knexjs]
+- [API IBGE][apiibge]
 - [TypeScript][typescript]
 - [React][reactjs]
+- [Leaflet][leaflet]
 - [React Native][rn]
 - [Expo][expo]
 
@@ -187,8 +190,11 @@ Made with ♥ by Lucca Radaeli :wave:
 [nodejs]: https://nodejs.org/
 [docker]: https://www.docker.com/
 [postgresql]: https://www.postgresql.org/
+[knexjs]: http://knexjs.org/
 [typescript]: https://www.typescriptlang.org/
 [expo]: https://expo.io/
 [reactjs]: https://reactjs.org
 [rn]: https://facebook.github.io/react-native/
 [yarn]: https://yarnpkg.com/
+[apiibge]: https://servicodados.ibge.gov.br/api/docs/localidades?versao=1
+[leaflet]: https://leafletjs.com/
